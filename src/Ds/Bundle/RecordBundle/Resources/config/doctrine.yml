@@ -1,0 +1,7 @@
+services:
+    ds_record.doctrine.orm.query_extension.record.owner:
+        class: Ds\Bundle\RecordBundle\Doctrine\ORM\QueryExtension\Record\OwnerExtension
+        autowire: true
+        tags:
+            - { name: api_platform.doctrine.orm.query_extension.collection, priority: 9 }
+            - { name: api_platform.doctrine.orm.query_extension.item }

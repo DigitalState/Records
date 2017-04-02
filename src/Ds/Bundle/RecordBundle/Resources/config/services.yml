@@ -1,0 +1,6 @@
+services:
+    ds_record.service.record:
+        class: Ds\Bundle\RecordBundle\Service\RecordService
+
+    ds_record.service.association:
+        class: Ds\Bundle\RecordBundle\Service\AssociationService

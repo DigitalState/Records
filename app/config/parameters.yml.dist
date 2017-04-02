@@ -1,0 +1,20 @@
+parameters:
+    database_host: database8012
+    database_port: ~
+    database_name: ds_records
+    database_user: ds_records
+    database_password: ds_records
+
+    jwt_private_key_path: "%kernel.root_dir%/../var/jwt/private.pem"
+    jwt_public_key_path: "%kernel.root_dir%/../var/jwt/public.pem"
+    jwt_key_pass_phrase: ""
+    jwt_token_ttl: 3600
+
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: ~
+    mailer_password: ~
+
+    secret: ThisTokenIsNotSoSecretChangeIt
+
+    cors_allow_origin: http://localhost

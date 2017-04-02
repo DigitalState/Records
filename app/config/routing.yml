@@ -1,0 +1,10 @@
+api:
+    resource: .
+    type: api_platform
+
+api_login_check:
+    path: /login_check
+
+#ds_individual:
+#    resource: "@DsIndividualBundle/Action/"
+#    type: annotation
