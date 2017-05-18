@@ -2,9 +2,9 @@ api:
     resource: .
     type: api_platform
 
-api_login_check:
-    path: /login_check
+ds_security:
+    resource: "@DsSecurityBundle/Resources/config/routing.yml"
 
-#ds_individual:
-#    resource: "@DsIndividualBundle/Action/"
+#ds_record:
+#    resource: "@DsRecordBundle/Action/"
 #    type: annotation

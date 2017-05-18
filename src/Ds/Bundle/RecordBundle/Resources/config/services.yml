@@ -2,5 +2,19 @@ services:
     ds_record.service.record:
         class: Ds\Bundle\RecordBundle\Service\RecordService
 
-    ds_record.service.association:
-        class: Ds\Bundle\RecordBundle\Service\AssociationService
+    ds_record.service.record_association:
+        class: Ds\Bundle\RecordBundle\Service\RecordAssociationService
+
+    ds_record.filter.record:
+        parent: api_platform.doctrine.orm.search_filter
+        arguments:
+            - { uuid: exact }
+        tags:
+            - { name: api_platform.filter, id: ds_record.filter.record }
+
+    ds_record.filter.record_association:
+        parent: api_platform.doctrine.orm.search_filter
+        arguments:
+            - { uuid: exact }
+        tags:
+            - { name: api_platform.filter, id: ds_record.filter.record_association }

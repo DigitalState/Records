@@ -1,7 +1,0 @@
-services:
-    ds_user.service.jwt_manager:
-        class: Ds\Bundle\UserBundle\Service\JWTManager
-        autowire: false
-        arguments:
-            - "@lexik_jwt_authentication.encoder"
-            - "@event_dispatcher"
