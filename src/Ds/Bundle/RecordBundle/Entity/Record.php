@@ -4,8 +4,8 @@ namespace Ds\Bundle\RecordBundle\Entity;
 
 use Ds\Component\Model\Type\Identifiable;
 use Ds\Component\Model\Type\Uuidentifiable;
-use Ds\Component\Model\Type\Translatable;
 use Ds\Component\Model\Type\Ownable;
+use Ds\Component\Model\Type\Translatable;
 use Ds\Component\Model\Type\Identitiable;
 use Ds\Component\Model\Accessor;
 use Ds\Component\Entity\Accessor as EntityAccessor;
@@ -47,6 +47,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
     use Accessor\OwnerUuid;
     use Accessor\Identity;
     use Accessor\IdentityUuid;
+    use Accessor\Title;
     use EntityAccessor\Associations;
 
     /**
@@ -128,6 +129,16 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
     protected $identityUuid;
 
     /**
+     * @var array
+     * @ApiProperty
+     * @Serializer\Groups({"record_output", "record_input"})
+     * @Assert\Type("array")
+     * @Assert\NotBlank
+     * @Translate
+     */
+    protected $title;
+
+    /**
      * @var \Doctrine\Common\Collections\ArrayCollection
      * @ApiProperty
      * @Serializer\Groups({"record_output"})
@@ -140,6 +151,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
      */
     public function __construct()
     {
+        $this->title = [];
         $this->associations = new ArrayCollection;
     }
 }
