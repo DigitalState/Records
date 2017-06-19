@@ -1,6 +1,6 @@
 <?php
 
-namespace Ds\Bundle\RecordBundle\Accessor;
+namespace Ds\Bundle\RecordBundle\Attribute\Accessor;
 
 use Ds\Bundle\RecordBundle\Entity\Record as RecordEntity;
 

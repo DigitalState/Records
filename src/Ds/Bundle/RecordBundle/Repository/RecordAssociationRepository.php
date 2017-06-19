@@ -2,11 +2,11 @@
 
 namespace Ds\Bundle\RecordBundle\Repository;
 
-use Ds\Component\Entity\Repository\AssociationRepository;
+use Doctrine\ORM\EntityRepository;
 
 /**
  * Class RecordAssociationRepository
  */
-class RecordAssociationRepository extends AssociationRepository
+class RecordAssociationRepository extends EntityRepository
 {
 }

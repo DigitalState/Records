@@ -1,2 +1,2 @@
-# Records
-Records Microservice
+# Assets
+Assets Microservice
