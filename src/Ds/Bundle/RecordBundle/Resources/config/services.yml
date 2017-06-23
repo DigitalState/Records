@@ -1,6 +1,9 @@
 services:
     ds_record.service.record:
         class: Ds\Bundle\RecordBundle\Service\RecordService
+        arguments:
+            - '@doctrine.orm.entity_manager'
+            - Ds\Bundle\RecordBundle\Entity\Record
 
     ds_record.service.record_association:
         class: Ds\Bundle\RecordBundle\Service\RecordAssociationService
