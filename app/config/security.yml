@@ -15,7 +15,7 @@ security:
 
     access_control:
         - { path: ^/security/permissions, role: IS_AUTHENTICATED_FULLY }
-        - { path: ^/permissions, role: IS_AUTHENTICATED_FULLY }
-        - { path: ^/configs, role: IS_AUTHENTICATED_FULLY }
-        - { path: ^/records, role: IS_AUTHENTICATED_FULLY }
-        - { path: ^/record-associations, role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/permissions,          role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/configs,              role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/records,              role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/record-associations,  role: IS_AUTHENTICATED_FULLY }
