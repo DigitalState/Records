@@ -1,8 +1,8 @@
 {
-    "name": "digitalstate/assets",
+    "name": "digitalstate/records",
     "license": "MIT",
     "type": "project",
-    "description": "The DigitalState Assets Api",
+    "description": "The DigitalState Records Api",
     "homepage": "https://digitalstate.ca",
     "autoload": {
         "psr-4": { "": "src/" },
