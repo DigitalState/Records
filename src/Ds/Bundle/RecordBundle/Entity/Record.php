@@ -7,6 +7,7 @@ use Ds\Component\Model\Type\Uuidentifiable;
 use Ds\Component\Model\Type\Ownable;
 use Ds\Component\Model\Type\Translatable;
 use Ds\Component\Model\Type\Identitiable;
+use Ds\Component\Model\Type\Versionable;
 use Ds\Component\Model\Attribute\Accessor;
 use Ds\Component\Association\Attribute\Accessor as EntityAccessor;
 use Knp\DoctrineBehaviors\Model as Behavior;
@@ -35,7 +36,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints as ORMAssert;
  * @ORM\HasLifecycleCallbacks
  * @ORMAssert\UniqueEntity(fields="uuid")
  */
-class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Identitiable
+class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Identitiable, Versionable
 {
     use Behavior\Translatable\Translatable;
     use Behavior\Timestampable\Timestampable;
@@ -48,6 +49,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
     use Accessor\Identity;
     use Accessor\IdentityUuid;
     use Accessor\Title;
+    use Accessor\Version;
     use EntityAccessor\Associations;
 
     /**
@@ -145,6 +147,17 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
      * @ORM\OneToMany(targetEntity="Ds\Bundle\RecordBundle\Entity\RecordAssociation", mappedBy="record", cascade={"persist", "remove"})
      */
     protected $associations;
+
+    /**
+     * @var integer
+     * @ApiProperty
+     * @Serializer\Groups({"record_output", "record_input"})
+     * @ORM\Column(name="version", type="integer")
+     * @ORM\Version
+     * @Assert\NotBlank
+     * @Assert\Type("integer")
+     */
+    protected $version;
 
     /**
      * Constructor
