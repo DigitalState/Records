@@ -53,6 +53,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
     use Accessor\Identity;
     use Accessor\IdentityUuid;
     use Accessor\Title;
+    use Accessor\Data;
     use Accessor\Version;
     use EntityAccessor\Associations;
 
@@ -151,6 +152,16 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
     protected $title;
 
     /**
+     * @var array
+     * @ApiProperty
+     * @Serializer\Groups({"record_output", "record_input"})
+     * @ORM\Column(name="data", type="json_array")
+     * @Assert\Type("array")
+     * @Assert\NotBlank
+     */
+    protected $data;
+
+    /**
      * @var \Doctrine\Common\Collections\ArrayCollection
      * @ApiProperty
      * @Serializer\Groups({"record_output"})
@@ -175,6 +186,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
     public function __construct()
     {
         $this->title = [];
+        $this->data = [];
         $this->associations = new ArrayCollection;
     }
 }
