@@ -98,6 +98,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
      * @Serializer\Groups({"record_output", "record_input"})
      * @ORM\Column(name="`owner`", type="string", length=255, nullable=true)
      * @Assert\NotBlank
+     * @Assert\Length(min=1, max=255)
      */
     protected $owner;
 
@@ -117,6 +118,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
      * @Serializer\Groups({"record_output", "record_input"})
      * @ORM\Column(name="identity", type="string", length=255, nullable=true)
      * @Assert\NotBlank
+     * @Assert\Length(min=1, max=255)
      */
     protected $identity;
 
@@ -136,6 +138,10 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
      * @Serializer\Groups({"record_output", "record_input"})
      * @Assert\Type("array")
      * @Assert\NotBlank
+     * @Assert\All({
+     *     @Assert\NotBlank,
+     *     @Assert\Length(min=1)
+     * })
      * @Translate
      */
     protected $title;
