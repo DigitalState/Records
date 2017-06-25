@@ -26,9 +26,13 @@ use Symfony\Bridge\Doctrine\Validator\Constraints as ORMAssert;
  *
  * @ApiResource(
  *      attributes={
- *          "filters"={"ds_record.filter.record"},
- *          "normalization_context"={"groups"={"record_output"}},
- *          "denormalization_context"={"groups"={"record_input"}}
+ *          "filters"={"ds.record.search", "ds.record.date"},
+ *          "normalization_context"={
+ *              "groups"={"record_output"}
+ *          },
+ *          "denormalization_context"={
+ *              "groups"={"record_input"}
+ *          }
  *      }
  * )
  * @ORM\Entity(repositoryClass="Ds\Bundle\RecordBundle\Repository\RecordRepository")
