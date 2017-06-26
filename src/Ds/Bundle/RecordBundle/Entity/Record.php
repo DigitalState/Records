@@ -157,7 +157,6 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Ide
      * @Serializer\Groups({"record_output", "record_input"})
      * @ORM\Column(name="data", type="json_array")
      * @Assert\Type("array")
-     * @Assert\NotBlank
      */
     protected $data;
 
