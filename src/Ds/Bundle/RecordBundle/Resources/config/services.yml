@@ -21,6 +21,14 @@ services:
         tags:
             - { name: api_platform.filter, id: ds.record.search }
 
+    ds_record.filter.record.search_translation:
+        parent: ds_translation.doctrine.orm.filter.search
+        arguments:
+            -
+                title: partial
+        tags:
+            - { name: api_platform.filter, id: ds.record.search_translation }
+
     ds_record.filter.record.date:
         parent: api_platform.doctrine.orm.date_filter
         arguments:
@@ -30,6 +38,19 @@ services:
                 deletedAt: ~
         tags:
             - { name: api_platform.filter, id: ds.record.date }
+
+    ds_record.filter.record.order:
+        parent: api_platform.doctrine.orm.order_filter
+        arguments:
+            -
+                id: ~
+                createdAt: ~
+                updatedAt: ~
+                deletedAt: ~
+                owner: ~
+                identity: ~
+        tags:
+            - { name: api_platform.filter, id: ds.record.order }
 
     ds_record.filter.record_association.search:
         parent: api_platform.doctrine.orm.search_filter
@@ -53,3 +74,16 @@ services:
                 deletedAt: ~
         tags:
             - { name: api_platform.filter, id: ds.record_association.date }
+
+    ds_record.filter.record_association.order:
+        parent: api_platform.doctrine.orm.order_filter
+        arguments:
+            -
+                id: ~
+                createdAt: ~
+                updatedAt: ~
+                deletedAt: ~
+                owner: ~
+                entity: ~
+        tags:
+            - { name: api_platform.filter, id: ds.record_association.order }
