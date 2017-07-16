@@ -1,4 +1,17 @@
-items: []
+items:
+    -
+        access: 45c47819-fc84-4b3f-8dea-463a5b678360 # Any individual
+        entity_uuid: 8454c987-cbc5-4a24-ba1a-d420283caabd # Public
+        key:
+            - record
+            - record_uuid
+            - record_title
+            - record_data
+            - record_association
+            - record_association_uuid
+            - record_association_entity
+            - record_association_entity_uuid
+        attributes: [BROWSE, READ]
 
 prototype:
     access: ~

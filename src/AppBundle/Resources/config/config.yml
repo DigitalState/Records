@@ -1,15 +1,28 @@
 ds_security:
     permissions:
-        record:               { title: app.permissions.record,               entity:   AppBundle\Entity\Record,              attributes: [BROWSE, READ, EDIT, ADD, DELETE] }
-        record_property:      { title: app.permissions.record.property,      property: AppBundle\Entity\Record.*,            attributes: [BROWSE, READ, EDIT] }
-        record_id:            { title: app.permissions.record.id,            property: AppBundle\Entity\Record.id,           attributes: [BROWSE, READ, EDIT] }
-        record_uuid:          { title: app.permissions.record.uuid,          property: AppBundle\Entity\Record.uuid,         attributes: [BROWSE, READ, EDIT] }
-        record_created_at:    { title: app.permissions.record.created_at,    property: AppBundle\Entity\Record.createdAt,    attributes: [BROWSE, READ, EDIT] }
-        record_updated_at:    { title: app.permissions.record.updated_at,    property: AppBundle\Entity\Record.updatedAt,    attributes: [BROWSE, READ, EDIT] }
-        record_deleted_at:    { title: app.permissions.record.deleted_at,    property: AppBundle\Entity\Record.deletedAt,    attributes: [BROWSE, READ, EDIT] }
-        record_owner:         { title: app.permissions.record.owner,         property: AppBundle\Entity\Record.owner,        attributes: [BROWSE, READ, EDIT] }
-        record_owner_uuid:    { title: app.permissions.record.owner_uuid,    property: AppBundle\Entity\Record.ownerUuid,    attributes: [BROWSE, READ, EDIT] }
-        record_identity:      { title: app.permissions.record.identity,      property: AppBundle\Entity\Record.identity,     attributes: [BROWSE, READ, EDIT] }
-        record_identity_uuid: { title: app.permissions.record.identity_uuid, property: AppBundle\Entity\Record.identityUuid, attributes: [BROWSE, READ, EDIT] }
-        record_title:         { title: app.permissions.record.title,         property: AppBundle\Entity\Record.title,        attributes: [BROWSE, READ, EDIT] }
-        record_version:       { title: app.permissions.record.version,       property: AppBundle\Entity\Record.version,      attributes: [BROWSE, READ, EDIT] }
+        record:                           { title: app.permissions.record,                           entity:   AppBundle\Entity\Record,              attributes: [BROWSE, READ, EDIT, ADD, DELETE] }
+        record_property:                  { title: app.permissions.record.property,                  property: AppBundle\Entity\Record.*,            attributes: [BROWSE, READ, EDIT] }
+        record_id:                        { title: app.permissions.record.id,                        property: AppBundle\Entity\Record.id,           attributes: [BROWSE, READ, EDIT] }
+        record_uuid:                      { title: app.permissions.record.uuid,                      property: AppBundle\Entity\Record.uuid,         attributes: [BROWSE, READ, EDIT] }
+        record_created_at:                { title: app.permissions.record.created_at,                property: AppBundle\Entity\Record.createdAt,    attributes: [BROWSE, READ, EDIT] }
+        record_updated_at:                { title: app.permissions.record.updated_at,                property: AppBundle\Entity\Record.updatedAt,    attributes: [BROWSE, READ, EDIT] }
+        record_deleted_at:                { title: app.permissions.record.deleted_at,                property: AppBundle\Entity\Record.deletedAt,    attributes: [BROWSE, READ, EDIT] }
+        record_owner:                     { title: app.permissions.record.owner,                     property: AppBundle\Entity\Record.owner,        attributes: [BROWSE, READ, EDIT] }
+        record_owner_uuid:                { title: app.permissions.record.owner_uuid,                property: AppBundle\Entity\Record.ownerUuid,    attributes: [BROWSE, READ, EDIT] }
+        record_identity:                  { title: app.permissions.record.identity,                  property: AppBundle\Entity\Record.identity,     attributes: [BROWSE, READ, EDIT] }
+        record_identity_uuid:             { title: app.permissions.record.identity_uuid,             property: AppBundle\Entity\Record.identityUuid, attributes: [BROWSE, READ, EDIT] }
+        record_title:                     { title: app.permissions.record.title,                     property: AppBundle\Entity\Record.title,        attributes: [BROWSE, READ, EDIT] }
+        record_version:                   { title: app.permissions.record.version,                   property: AppBundle\Entity\Record.version,      attributes: [BROWSE, READ, EDIT] }
+        record_association:               { title: app.permissions.record_association,               entity:   AppBundle\Entity\Record,              attributes: [BROWSE, READ, EDIT, ADD, DELETE] }
+        record_association_property:      { title: app.permissions.record_association.property,      property: AppBundle\Entity\Record.*,            attributes: [BROWSE, READ, EDIT] }
+        record_association_id:            { title: app.permissions.record_association.id,            property: AppBundle\Entity\Record.id,           attributes: [BROWSE, READ, EDIT] }
+        record_association_uuid:          { title: app.permissions.record_association.uuid,          property: AppBundle\Entity\Record.uuid,         attributes: [BROWSE, READ, EDIT] }
+        record_association_created_at:    { title: app.permissions.record_association.created_at,    property: AppBundle\Entity\Record.createdAt,    attributes: [BROWSE, READ, EDIT] }
+        record_association_updated_at:    { title: app.permissions.record_association.updated_at,    property: AppBundle\Entity\Record.updatedAt,    attributes: [BROWSE, READ, EDIT] }
+        record_association_deleted_at:    { title: app.permissions.record_association.deleted_at,    property: AppBundle\Entity\Record.deletedAt,    attributes: [BROWSE, READ, EDIT] }
+        record_association_owner:         { title: app.permissions.record_association.owner,         property: AppBundle\Entity\Record.owner,        attributes: [BROWSE, READ, EDIT] }
+        record_association_owner_uuid:    { title: app.permissions.record_association.owner_uuid,    property: AppBundle\Entity\Record.ownerUuid,    attributes: [BROWSE, READ, EDIT] }
+        record_association_record:        { title: app.permissions.record_association.record,        property: AppBundle\Entity\Record.record,       attributes: [BROWSE, READ, EDIT] }
+        record_association_entity:        { title: app.permissions.record_association.entity,        property: AppBundle\Entity\Record.identity,     attributes: [BROWSE, READ, EDIT] }
+        record_association_entity_uuid:   { title: app.permissions.record_association.entity_uuid,   property: AppBundle\Entity\Record.identityUuid, attributes: [BROWSE, READ, EDIT] }
+        record_association_version:       { title: app.permissions.record_association.version,       property: AppBundle\Entity\Record.version,      attributes: [BROWSE, READ, EDIT] }
