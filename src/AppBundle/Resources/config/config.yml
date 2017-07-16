@@ -12,6 +12,7 @@ ds_security:
         record_identity:                  { title: app.permissions.record.identity,                  property: AppBundle\Entity\Record.identity,     attributes: [BROWSE, READ, EDIT] }
         record_identity_uuid:             { title: app.permissions.record.identity_uuid,             property: AppBundle\Entity\Record.identityUuid, attributes: [BROWSE, READ, EDIT] }
         record_title:                     { title: app.permissions.record.title,                     property: AppBundle\Entity\Record.title,        attributes: [BROWSE, READ, EDIT] }
+        record_data:                      { title: app.permissions.record.data,                      property: AppBundle\Entity\Record.data,         attributes: [BROWSE, READ, EDIT] }
         record_version:                   { title: app.permissions.record.version,                   property: AppBundle\Entity\Record.version,      attributes: [BROWSE, READ, EDIT] }
         record_association:               { title: app.permissions.record_association,               entity:   AppBundle\Entity\Record,              attributes: [BROWSE, READ, EDIT, ADD, DELETE] }
         record_association_property:      { title: app.permissions.record_association.property,      property: AppBundle\Entity\Record.*,            attributes: [BROWSE, READ, EDIT] }
