@@ -1,0 +1,25 @@
+items:
+    -
+        access: 6057f6de-7e3d-41f1-8d0a-5012d98c67df # Any system
+        entity_uuid: ~ # Any business unit
+        key: entity
+        attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+
+    -
+        access: 6057f6de-7e3d-41f1-8d0a-5012d98c67df # Any system
+        entity_uuid: ~ # Any business unit
+        key: property
+        attributes: [BROWSE, READ, EDIT]
+
+    -
+        access: 6057f6de-7e3d-41f1-8d0a-5012d98c67df # Any system
+        entity_uuid: ~ # Any business unit
+        key: custom
+        attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
+
+prototype:
+    access: ~
+    entity: BusinessUnit
+    entity_uuid: ~
+    key: ~
+    attributes: []

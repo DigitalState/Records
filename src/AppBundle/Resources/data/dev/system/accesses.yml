@@ -1,0 +1,13 @@
+items:
+    -
+        uuid: 6057f6de-7e3d-41f1-8d0a-5012d98c67df
+        owner_uuid: c11c546e-bd01-47cf-97da-e25388357b5a # Administration
+        identity: System
+        identity_uuid: ~ # Any system
+
+prototype:
+    uuid: ~
+    owner: BusinessUnit
+    owner_uuid: ~
+    identity: ~
+    identity_uuid: ~

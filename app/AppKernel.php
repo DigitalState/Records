@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Dunglas\ActionBundle\DunglasActionBundle(),
@@ -28,11 +29,12 @@ class AppKernel extends Kernel
             new Knp\DoctrineBehaviors\Bundle\DoctrineBehaviorsBundle(),
             new Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle(),
             new Ds\Component\Config\Bridge\Symfony\Bundle\DsConfigBundle(),
-            new Ds\Component\Model\Bridge\Symfony\Bundle\DsModelBundle(),
+            new Ds\Component\Entity\Bridge\Symfony\Bundle\DsEntityBundle(),
+            new Ds\Component\Locale\Bridge\Symfony\Bundle\DsLocaleBundle(),
             new Ds\Component\Security\Bridge\Symfony\Bundle\DsSecurityBundle(),
             new Ds\Component\Session\Bridge\Symfony\Bundle\DsSessionBundle(),
             new Ds\Component\Translation\Bridge\Symfony\Bundle\DsTranslationBundle(),
-            new Ds\Bundle\RecordBundle\DsRecordBundle(),
+            new AppBundle\AppBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
