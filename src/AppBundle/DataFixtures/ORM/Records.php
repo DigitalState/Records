@@ -23,6 +23,6 @@ class Records extends RecordFixture implements OrderedFixtureInterface
      */
     protected function getResource()
     {
-        return __DIR__.'/../../Resources/data/{server}/records.yml';
+        return __DIR__.'/../../Resources/data/{env}/records.yml';
     }
 }

@@ -5,6 +5,7 @@ namespace AppBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Ds\Component\Locale\Model\Type\Localizable;
 use Ds\Component\Model\Attribute\Accessor;
+use Ds\Component\Model\Type\Deletable;
 use Ds\Component\Model\Type\Identifiable;
 use Ds\Component\Model\Type\Identitiable;
 use Ds\Component\Model\Type\Ownable;
@@ -47,7 +48,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Table(name="app_record")
  * @ORMAssert\UniqueEntity(fields="uuid")
  */
-class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Localizable, Identitiable, Versionable
+class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Localizable, Identitiable, Deletable, Versionable
 {
     use Behavior\Translatable\Translatable;
     use Behavior\Timestampable\Timestampable;
@@ -61,6 +62,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Loc
     use Accessor\IdentityUuid;
     use TranslationAccessor\Title;
     use Accessor\Data;
+    use Accessor\Deleted;
     use Accessor\Version;
     use AssociationAccessor\Associations;
 
