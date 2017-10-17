@@ -172,7 +172,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Loc
 
     /**
      * @var \Doctrine\Common\Collections\ArrayCollection
-     * @ApiProperty
+     * @ApiProperty(writable=false)
      * @Serializer\Groups({"record_output"})
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\RecordAssociation", mappedBy="record", cascade={"persist", "remove"})
      */
