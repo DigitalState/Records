@@ -1,8 +1,13 @@
-items: []
+items:
+    -
+        uuid: 2c7bd3d9-f3fe-4621-826f-cb3dc8029c7c
+        owner: System
+        owner_uuid: 5386e249-8ad0-45f1-a30e-d5a055cc5993 # System
+        identity_uuid: 5386e249-8ad0-45f1-a30e-d5a055cc5993 # System
 
 prototype:
     uuid: ~
     owner: BusinessUnit
     owner_uuid: ~
-    identity: ~
+    identity: System
     identity_uuid: ~
