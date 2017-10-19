@@ -3,7 +3,7 @@
 namespace AppBundle\Entity;
 
 use Ds\Component\Association\Entity\Association;
-use AppBundle\Attribute\Accessor;
+use AppBundle\Entity\Attribute\Accessor;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Annotation\ApiProperty;
