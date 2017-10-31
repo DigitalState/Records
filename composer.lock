@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "50d23f8179cc25de479ea7a8977433be",
+    "content-hash": "38987ad2ec832d6297b141c5e27c748a",
     "packages": [
         {
             "name": "api-platform/core",
@@ -149,12 +149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DigitalState/Core.git",
-                "reference": "687dd7b84e7c5b016b2bea449409594984f3e602"
+                "reference": "4b28a96d11bc3aa208878a278cbbcd4ef1675373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DigitalState/Core/zipball/687dd7b84e7c5b016b2bea449409594984f3e602",
-                "reference": "687dd7b84e7c5b016b2bea449409594984f3e602",
+                "url": "https://api.github.com/repos/DigitalState/Core/zipball/4b28a96d11bc3aa208878a278cbbcd4ef1675373",
+                "reference": "4b28a96d11bc3aa208878a278cbbcd4ef1675373",
                 "shasum": ""
             },
             "require": {
@@ -183,7 +183,7 @@
             ],
             "description": "The DigitalState Core",
             "homepage": "https://digitalstate.ca",
-            "time": "2017-10-06T00:19:33+00:00"
+            "time": "2017-10-31T19:20:32+00:00"
         },
         {
             "name": "doctrine/annotations",
