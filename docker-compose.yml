@@ -36,7 +36,7 @@ services:
             records_php:
                 condition: service_started
         environment:
-            VIRTUAL_HOST: api.records.ds
+            - VIRTUAL_HOST
         volumes_from:
             - records_php
         volumes:
