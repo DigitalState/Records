@@ -35,6 +35,7 @@ services:
             - 'api.camunda.ds:${PROXY_HOST}'
             - 'api.cases.ds:${PROXY_HOST}'
             - 'api.cms.ds:${PROXY_HOST}'
+            - 'api.formio.ds:${PROXY_HOST}'
             - 'api.discovery.ds:${PROXY_HOST}'
             - 'api.identities.ds:${PROXY_HOST}'
             - 'api.interactions.ds:${PROXY_HOST}'
