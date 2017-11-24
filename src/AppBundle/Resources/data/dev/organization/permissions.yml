@@ -1,4 +1,17 @@
-items: []
+items:
+    -
+        access: 2d04e840-c630-4c40-a6c8-0e6ce1def3c0 # Any organization
+        entity_uuid: 8454c987-cbc5-4a24-ba1a-d420283caabd # Public Works
+        key:
+            - record
+            - record_uuid
+            - record_title
+            - record_data
+            - record_association
+            - record_association_uuid
+            - record_association_entity
+            - record_association_entity_uuid
+        attributes: [BROWSE, READ]
 
 prototype:
     access: ~

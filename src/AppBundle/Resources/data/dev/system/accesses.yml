@@ -1,8 +1,14 @@
 items:
     -
-        uuid: 6057f6de-7e3d-41f1-8d0a-5012d98c67df
+        uuid: ebb9a107-18be-4472-b57e-9b31d04eb2da
+        owner: System
+        owner_uuid: fe1b94ed-783a-48d7-8bf2-2f9cea89f11e # System
+        identity_uuid: fe1b94ed-783a-48d7-8bf2-2f9cea89f11e # System
+
+    -
+        uuid: 98cab17f-2221-48ce-b461-048694f5ec02
         owner_uuid: c11c546e-bd01-47cf-97da-e25388357b5a # Administration
-        identity_uuid: ~ # Any system
+        identity_uuid: 60591cbd-efad-4289-9b7c-a258016e94cb # Bpm
 
 prototype:
     uuid: ~
