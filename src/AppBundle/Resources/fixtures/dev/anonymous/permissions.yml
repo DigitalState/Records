@@ -1,0 +1,21 @@
+items:
+    -
+        access: 57328457-2188-47e1-9d45-a68b8c61df0f # Any Anonymous
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+        key:
+            - record
+            - record_uuid
+            - record_title
+            - record_data
+            - record_association
+            - record_association_uuid
+            - record_association_entity
+            - record_association_entity_uuid
+        attributes: [BROWSE, READ]
+
+prototype:
+    access: ~
+    entity: BusinessUnit
+    entity_uuid: ~
+    key: ~
+    attributes: []

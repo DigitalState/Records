@@ -1,7 +1,7 @@
 items:
     -
-        access: 2d04e840-c630-4c40-a6c8-0e6ce1def3c0 # Any organization
-        entity_uuid: 8454c987-cbc5-4a24-ba1a-d420283caabd # Public Works
+        access: b57b24a1-586d-4ae0-b322-12ee4a7b296d # Any Individual
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
         key:
             - record
             - record_uuid

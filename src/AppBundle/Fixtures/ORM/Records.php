@@ -23,6 +23,6 @@ class Records extends RecordFixture implements OrderedFixtureInterface
      */
     protected function getResource()
     {
-        return '/srv/api-platform/src/AppBundle/Resources/data/{env}/records.yml';
+        return '/srv/api-platform/src/AppBundle/Resources/fixtures/{env}/records.yml';
     }
 }

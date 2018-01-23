@@ -1,0 +1,61 @@
+items:
+    -
+        access: 123c7017-d038-4fc7-9c63-245f31158758 # Any Staff
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+        key:
+            - record
+            - record_property
+            - record_association
+            - record_association_property
+        attributes: [BROWSE, READ]
+
+    -
+        access: 5c023f25-e3fb-4dc9-b668-b201f89adb77 # Admin
+        entity_uuid: ~ # Any BusinessUnit
+        key: entity
+        attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+
+    -
+        access: 5c023f25-e3fb-4dc9-b668-b201f89adb77 # Admin
+        entity_uuid: ~ # Any BusinessUnit
+        key: property
+        attributes: [BROWSE, READ, EDIT]
+
+    -
+        access: 5c023f25-e3fb-4dc9-b668-b201f89adb77 # Admin
+        entity_uuid: ~ # Any BusinessUnit
+        key: custom
+        attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
+
+    -
+        access: 49c4354d-daad-4694-bd66-97eebd1bf00b # Manager
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+        key:
+            - record
+            - record_association
+        attributes: [EDIT, ADD, DELETE]
+
+    -
+        access: 49c4354d-daad-4694-bd66-97eebd1bf00b # Manager
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+        key:
+            - record_property
+            - record_association_property
+        attributes: [EDIT]
+
+    -
+        access: 404d8ef3-634b-4c4a-a172-981fc9585d3a # Agent
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+        key:
+            - record
+            - record_property
+            - record_association
+            - record_association_property
+        attributes: [EDIT]
+
+prototype:
+    access: ~
+    entity: BusinessUnit
+    entity_uuid: ~
+    key: ~
+    attributes: []
