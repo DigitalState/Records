@@ -1,25 +1,23 @@
 items:
     -
-        access: b0b9dca1-ee41-4ff3-a44f-31f80276be0d # System
-        entity_uuid: ~ # Any BusinessUnit
+        access: 627899c6-d236-4315-a011-2fba2801558f # System
         key: entity
         attributes: [BROWSE, READ, EDIT, ADD, DELETE]
 
     -
-        access: b0b9dca1-ee41-4ff3-a44f-31f80276be0d # System
-        entity_uuid: ~ # Any BusinessUnit
+        access: 627899c6-d236-4315-a011-2fba2801558f # System
         key: property
         attributes: [BROWSE, READ, EDIT]
 
     -
-        access: b0b9dca1-ee41-4ff3-a44f-31f80276be0d # System
-        entity_uuid: ~ # Any BusinessUnit
-        key: custom
+        access: 627899c6-d236-4315-a011-2fba2801558f # System
+        key: generic
         attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
 
 prototype:
     access: ~
-    entity: BusinessUnit
+    scope: generic
+    entity: ~
     entity_uuid: ~
     key: ~
     attributes: []

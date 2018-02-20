@@ -1,11 +1,8 @@
-items:
-    -
-        uuid: c57ac65c-878f-4be6-b144-9cd5979b13db
-        identity_uuid: ~ # Any Organization
+items: []
 
 prototype:
     uuid: ~
     owner: BusinessUnit
     owner_uuid: c11c546e-bd01-47cf-97da-e25388357b5a # Administration
-    identity: Organization
-    identity_uuid: ~
+    assignee: Organization
+    assignee_uuid: ~
