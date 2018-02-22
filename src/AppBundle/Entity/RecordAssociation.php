@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Ds\Component\Association\Entity\Association;
+use Ds\Component\Security\Model\Type\Secured;
 use AppBundle\Entity\Attribute\Accessor;
 
 use ApiPlatform\Core\Annotation\ApiResource;
@@ -32,7 +33,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Entity(repositoryClass="AppBundle\Repository\RecordAssociationRepository")
  * @ORM\Table(name="app_record_association")
  */
-class RecordAssociation extends Association
+class RecordAssociation extends Association implements Secured
 {
     use Accessor\Record;
 
