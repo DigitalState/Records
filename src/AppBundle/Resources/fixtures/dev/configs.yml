@@ -2,7 +2,12 @@ items:
     -
         uuid: 6f40a9f9-1a8f-46aa-a1cd-73dfb50e5b33
         key: ds_api.user.username
-        value: system@ds
+        value: system@system.ds
+
+    -
+        uuid: 1d87698a-1c33-41a8-a1b8-9dd46a196743
+        key: ds_api.user.password
+        value: system
 
     -
         uuid: 6eb84e3e-4cd2-4b21-8b59-61054a1b36f7
