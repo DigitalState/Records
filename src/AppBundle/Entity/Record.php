@@ -47,6 +47,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * )
  * @ORM\Entity(repositoryClass="AppBundle\Repository\RecordRepository")
  * @ORM\Table(name="app_record")
+ * @ORM\Cache(usage="NONSTRICT_READ_WRITE")
  * @ORMAssert\UniqueEntity(fields="uuid")
  */
 class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Localizable, Identitiable, Deletable, Versionable, Secured
@@ -176,6 +177,7 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Loc
      * @ApiProperty(writable=false)
      * @Serializer\Groups({"record_output"})
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\RecordAssociation", mappedBy="record", cascade={"persist", "remove"})
+     * @ORM\Cache(usage="NONSTRICT_READ_WRITE")
      */
     protected $associations;
 
