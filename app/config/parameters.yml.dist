@@ -3,7 +3,7 @@ parameters:
 
     discovery_host: api.discovery.ds
 
-    database_host: records_db
+    database_host: records_database
     database_port: 5432
     database_name: records
     database_user: records
