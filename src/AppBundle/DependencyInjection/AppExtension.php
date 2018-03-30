@@ -34,5 +34,6 @@ class AppExtension extends Extension implements PrependExtensionInterface
         $loader->load('api_filters.yml');
         $loader->load('repositories.yml');
         $loader->load('services.yml');
+        $loader->load('stats.yml');
     }
 }
