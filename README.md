@@ -3,6 +3,7 @@
 Description...
 
 [![Build Status](https://travis-ci.org/DigitalState/Records.svg?branch=develop)](https://travis-ci.org/DigitalState/Records)
+[![Coverage Status](https://coveralls.io/repos/github/DigitalState/Records/badge.svg?branch=develop)](https://coveralls.io/github/DigitalState/Records?branch=develop)
 
 ## Table of Contents
 
