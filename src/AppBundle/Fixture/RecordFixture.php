@@ -16,26 +16,19 @@ abstract class RecordFixture extends ResourceFixture
      */
     public function load(ObjectManager $manager)
     {
-        $records = $this->parse($this->getResource());
+        $objects = $this->parse($this->getResource());
 
-        foreach ($records as $record) {
-            $entity = new Record;
-            $entity
-                ->setUuid($record['uuid'])
-                ->setOwner($record['owner'])
-                ->setOwnerUuid($record['owner_uuid'])
-                ->setOwner($record['identity'])
-                ->setOwnerUuid($record['identity_uuid'])
-                ->setTitle($record['title']);
-            $manager->persist($entity);
+        foreach ($objects as $object) {
+            $record = new Record;
+            $record
+                ->setUuid($object->uuid)
+                ->setOwner($object->owner)
+                ->setOwnerUuid($object->owner_uuid)
+                ->setOwner($object->identity)
+                ->setOwnerUuid($object->identity_uuid)
+                ->setTitle((array) $object->title);
+            $manager->persist($record);
             $manager->flush();
         }
     }
-
-    /**
-     * Get resource
-     *
-     * @return string
-     */
-    abstract protected function getResource();
 }
