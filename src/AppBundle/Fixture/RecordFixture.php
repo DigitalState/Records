@@ -26,7 +26,8 @@ abstract class RecordFixture extends ResourceFixture
                 ->setOwnerUuid($object->owner_uuid)
                 ->setOwner($object->identity)
                 ->setOwnerUuid($object->identity_uuid)
-                ->setTitle((array) $object->title);
+                ->setTitle((array) $object->title)
+                ->setTenant($object->tenant);
             $manager->persist($record);
             $manager->flush();
         }

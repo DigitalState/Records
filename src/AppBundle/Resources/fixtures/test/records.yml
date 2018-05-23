@@ -6,6 +6,5 @@ prototype:
   owner_uuid: ~
   identity: ~
   identity_uuid: ~
-  title:
-    en: ~
-    fr: ~
+  title: {}
+  tenant: ~

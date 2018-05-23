@@ -14,6 +14,7 @@ ds_security:
         record_title:                   { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.title,        title: app.permissions.record.title                   }
         record_data:                    { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.data,         title: app.permissions.record.data                    }
         record_version:                 { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.version,      title: app.permissions.record.version                 }
+        record_tenant:                  { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.tenant,       title: app.permissions.record.tenant                  }
         record_association:             { attributes: [BROWSE, READ, EDIT, ADD, DELETE], entity:   AppBundle\Entity\Record,              title: app.permissions.record_association             }
         record_association_property:    { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.*,            title: app.permissions.record_association.property    }
         record_association_id:          { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.id,           title: app.permissions.record_association.id          }
@@ -27,3 +28,4 @@ ds_security:
         record_association_entity:      { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.identity,     title: app.permissions.record_association.entity      }
         record_association_entity_uuid: { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.identityUuid, title: app.permissions.record_association.entity_uuid }
         record_association_version:     { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.version,      title: app.permissions.record_association.version     }
+        record_association_tenant:      { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Record.tenant,       title: app.permissions.record_association.tenant      }
