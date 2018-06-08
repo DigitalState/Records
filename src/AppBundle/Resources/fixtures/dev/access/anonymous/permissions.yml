@@ -1,4 +1,16 @@
-fixtures: []
+fixtures:
+  - access: b2d4d40c-e202-4921-bd63-7c59a22da155 # Anonymous
+    scope: session
+    key:
+      - record
+      - record_uuid
+      - record_title
+      - record_data
+      - record_association
+      - record_association_uuid
+      - record_association_entity
+      - record_association_entity_uuid
+    attributes: [BROWSE, READ]
 
 prototype:
   access: ~
