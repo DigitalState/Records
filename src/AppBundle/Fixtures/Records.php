@@ -15,7 +15,7 @@ class Records extends RecordFixture implements OrderedFixtureInterface
      */
     public function getOrder()
     {
-        return 10;
+        return 20;
     }
 
     /**
