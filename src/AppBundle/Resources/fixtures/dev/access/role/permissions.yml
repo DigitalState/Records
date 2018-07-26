@@ -25,6 +25,7 @@ fixtures:
     key:
       - record
       - record_association
+      - metadata
     attributes: [EDIT, ADD, DELETE]
 
   - access: f75cea36-2c92-4d1a-a004-cc5509e5c3aa # Manager
@@ -34,6 +35,7 @@ fixtures:
     key:
       - record_property
       - record_association_property
+      - metadata_property
     attributes: [EDIT]
 
   - access: 021b3942-2551-47b5-8714-e00e34e4df26 # Staff
@@ -45,6 +47,8 @@ fixtures:
       - record_property
       - record_association
       - record_association_property
+      - metadata
+      - metadata_property
     attributes: [BROWSE, READ]
 
   - access: 2b1a3275-abdd-475e-8b98-cd1943b2e67b # Individual
