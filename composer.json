@@ -1,8 +1,8 @@
 {
-    "name": "digitalstate/records",
+    "name": "digitalstate/identities",
     "license": "MIT",
     "type": "project",
-    "description": "The DigitalState Records Api",
+    "description": "The DigitalState Identities Api",
     "homepage": "https://digitalstate.ca",
     "autoload": {
         "psr-4": { "": "src/" },
@@ -29,6 +29,7 @@
         "phpdocumentor/reflection-docblock": "^3.0",
         "knplabs/doctrine-behaviors": "~1.1",
         "dunglas/doctrine-json-odm": "0.1.1",
+        "defuse/php-encryption": "^2.2",
         "digitalstate/core": "dev-develop"
     },
     "require-dev": {
