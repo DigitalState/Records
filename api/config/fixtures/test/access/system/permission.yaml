@@ -1,0 +1,39 @@
+objects:
+  - access: 1de63f79-b22e-498f-a3da-75c3448f0e74 # System
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    tenant: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
+
+  - access: 1de63f79-b22e-498f-a3da-75c3448f0e74 # System
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    tenant: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
+
+  - access: 1de63f79-b22e-498f-a3da-75c3448f0e74 # System
+    key: generic
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
+    tenant: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
+
+  - access: dddbc034-15ae-4b63-909c-6bb05d8af567 # System
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    tenant: 92000deb-b847-4838-915c-b95d2b28e960 # Tenant 2
+
+  - access: dddbc034-15ae-4b63-909c-6bb05d8af567 # System
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    tenant: 92000deb-b847-4838-915c-b95d2b28e960 # Tenant 2
+
+  - access: dddbc034-15ae-4b63-909c-6bb05d8af567 # System
+    key: generic
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
+    tenant: 92000deb-b847-4838-915c-b95d2b28e960 # Tenant 2
+
+prototype:
+  access: ~
+  scope: generic
+  entity: ~
+  entity_uuid: ~
+  key: ~
+  attributes: []
+  tenant: ~

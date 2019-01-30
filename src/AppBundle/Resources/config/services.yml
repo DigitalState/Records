@@ -1,8 +1,0 @@
-services:
-  app.service.record:
-    class: AppBundle\Service\RecordService
-    parent: ds_entity.service.entity
-
-  app.service.record_association:
-    class: AppBundle\Service\RecordAssociationService
-    parent: ds_entity.service.entity

@@ -1,7 +1,0 @@
-services:
-  app.stat.record.count:
-    class: AppBundle\Stat\Record\CountStat
-    arguments:
-      - '@app.service.record'
-    tags:
-      - { name: ds_statistic.stat, alias: record.count }

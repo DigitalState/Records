@@ -1,0 +1,49 @@
+parameters:
+  locale: en
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  App\:
+    resource: ../src/{Controller,Fixture,Repository,Service,Stat,Tenant}
+
+  App\Controller\:
+    resource: ../src/Controller
+    tags: [controller.service_arguments]
+
+  App\Fixture\:
+    resource: ../src/Fixture
+    tags: [doctrine.fixture.orm]
+
+  App\Repository\RecordRepository:
+    factory: ['@doctrine.orm.default_entity_manager', getRepository]
+    arguments:
+      - App\Entity\Record
+
+  App\Repository\RecordAssociationRepository:
+    factory: ['@doctrine.orm.default_entity_manager', getRepository]
+    arguments:
+      - App\Entity\RecordAssociation
+
+  App\Stat\Record\CountStat:
+    tags:
+      - { name: ds_statistic.stat, alias: record.count }
+
+  App\Tenant\Loader\AclLoader:
+    tags:
+      - { name: ds_tenant.loader }
+
+  App\Tenant\Loader\ConfigLoader:
+    tags:
+      - { name: ds_tenant.loader }
+
+  App\Tenant\Unloader\RecordUnloader:
+    tags:
+      - { name: ds_tenant.unloader }
+
+  App\Tenant\Unloader\RecordAssociationUnloader:
+    tags:
+      - { name: ds_tenant.unloader, priority: -1 }

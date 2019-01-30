@@ -1,0 +1,53 @@
+objects:
+  - uuid: 88d90364-c6be-4dac-8fa4-7e4d43d08eea
+    owner_uuid: 83bf8f26-7181-4bed-92f3-3ce5e4c286d7 # Backoffice
+    identity: Individual
+    identity_uuid: 9ce3bdb9-47e1-43c9-81ee-0dcc2106ba42 # Morgan
+    title:
+      en: Animal License Form Submission
+      fr: Formulaire de soumission pour permis animalier
+    data:
+      type: dog
+    tenant: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
+
+  - uuid: 077dc344-44e4-483a-8180-d992175bb441
+    owner_uuid: 83bf8f26-7181-4bed-92f3-3ce5e4c286d7 # Backoffice
+    identity: Organization
+    identity_uuid: a6b3a00b-e732-4aeb-8011-a1e58fc7b5e3 # Acme
+    title:
+      en: Animal License Form Submission
+      fr: Formulaire de soumission pour permis animalier
+    data:
+      type: cat
+    tenant: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
+
+  - uuid: c70b4afc-01e3-4c2b-9f64-9e4ad27b1f39
+    owner_uuid: 6e9c30e2-ce82-4d32-a60a-b0c6b0a1474e # Backoffice
+    identity: Individual
+    identity_uuid: e28fabd0-aae5-4f21-bedd-e4d32658484b # Morgan
+    title:
+      en: Animal License Form Submission
+      fr: Formulaire de soumission pour permis animalier
+    data:
+      type: dog
+    tenant: 92000deb-b847-4838-915c-b95d2b28e960 # Tenant 2
+
+  - uuid: 0a698b6f-cfe7-46fb-895b-b6977da820b2
+    owner_uuid: 6e9c30e2-ce82-4d32-a60a-b0c6b0a1474e # Backoffice
+    identity: Organization
+    identity_uuid: 123ea2f7-7869-45fc-975a-0392e889b488 # Acme
+    title:
+      en: Animal License Form Submission
+      fr: Formulaire de soumission pour permis animalier
+    data:
+      type: cat
+    tenant: 92000deb-b847-4838-915c-b95d2b28e960 # Tenant 2
+
+prototype:
+  uuid: ~
+  owner: BusinessUnit
+  owner_uuid: ~
+  identity: ~
+  identity_uuid: ~
+  title: {}
+  tenant: ~
