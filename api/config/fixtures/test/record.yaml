@@ -50,4 +50,5 @@ prototype:
   identity: ~
   identity_uuid: ~
   title: {}
+  data: {}
   tenant: ~
