@@ -15,10 +15,7 @@ services:
           - records_database
 
   php:
-    image: digitalstate/records-php
-    build:
-      context: ./api
-      target: api_platform_php
+    image: digitalstate/records:php-0.16.0
     depends_on:
       - database
     env_file:
@@ -44,10 +41,7 @@ services:
           - records_php
 
   api:
-    image: digitalstate/records-api
-    build:
-      context: ./api
-      target: api_platform_nginx
+    image: digitalstate/records:api-0.16.0
     depends_on:
       - php
     networks:
