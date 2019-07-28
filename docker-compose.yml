@@ -15,7 +15,7 @@ services:
           - records_database
 
   php:
-    image: digitalstate/records:php-0.17.0
+    image: digitalstate/records:php-0.17.1
     depends_on:
       - database
     env_file:
@@ -41,7 +41,7 @@ services:
           - records_php
 
   api:
-    image: digitalstate/records:api-0.17.0
+    image: digitalstate/records:api-0.17.1
     depends_on:
       - php
     networks:
