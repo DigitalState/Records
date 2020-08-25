@@ -25,7 +25,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  *          },
  *          "filters"={
  *              "app.record_association.search",
- *              "app.record_association.date"
+ *              "app.record_association.date",
+ *              "app.record_association.order"
  *          }
  *      }
  * )
