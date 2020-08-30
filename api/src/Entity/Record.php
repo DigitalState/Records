@@ -91,8 +91,9 @@ class Record implements Identifiable, Uuidentifiable, Ownable, Translatable, Loc
 
     /**
      * @var \DateTime
-     * @ApiProperty(writable=false)
-     * @Serializer\Groups({"record_output"})
+     * @ApiProperty
+     * @Serializer\Groups({"record_output", "record_input"})
+     * @Assert\DateTime
      */
     protected $createdAt;
 
